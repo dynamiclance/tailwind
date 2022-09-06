@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .btn{
+        @apply  px-7 py-5 rounded-full text-white focus:outline-none focus:ring hover:bg-slate-400
+      }
+      
+      .btn-purple {
+         @apply focus:ring-white bg-purple-900 hover:bg-slate-400
+      }
+      
+      .btn-blue {
+          @apply bg-blue-600 focus:ring-black
+      }
+}
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+}
+
+@layer utilities {
+    .text-body {
+        font-size: 12px;
+    }
+}
